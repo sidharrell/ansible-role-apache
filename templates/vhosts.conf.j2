@@ -64,7 +64,7 @@
 {% if vhost.documentroot is defined %}
   <Directory "{{ vhost.documentroot }}">
     AllowOverride All
-    Options -Indexes +FollowSymLinks
+    Options +FollowSymLinks
 {% if apache_vhosts_version == "2.2" %}
     Order allow,deny
     Allow from all
